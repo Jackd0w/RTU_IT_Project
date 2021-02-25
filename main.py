@@ -3,13 +3,13 @@ from website import create
 
 app = create()
 
-@app.route('/')
-def home():
-    return (render_template('base.html'))
-
 #TODO Add custom error-handlers
-
+#TODO Add HTTP request handler
+#TODO Add database
+#TODO Creating new user accounts
+#TODO Login
 
 
 if __name__ == "__main__":
+    
     app.run(debug=True)
