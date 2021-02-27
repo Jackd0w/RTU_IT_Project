@@ -4,7 +4,6 @@ from website import create
 app = create()
 
 #TODO Add custom error-handlers
-#TODO Add HTTP request handler
 #TODO Add database
 #TODO Creating new user accounts
 #TODO Login
