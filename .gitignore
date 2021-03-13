@@ -1,0 +1,6 @@
+Pipfile
+Pipfile.lock
+__pycache__
+.vscode
+tests\__pycache__
+website\__pycache__
