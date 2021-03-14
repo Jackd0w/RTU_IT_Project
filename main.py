@@ -2,7 +2,7 @@ from flask import Flask, redirect, url_for, render_template
 from website import create
 
 
-app = create()
+app = create('default')
 
 
 if __name__ == "__main__":
