@@ -1,7 +1,8 @@
-FROM python:3.8.7-alpine 
-WORKDIR /RTUIT_PROJECT
-COPY requirements.txt /RTUIT_PROJECT
-RUN pip3 install -r requirements.txt 
-COPY . /RTUIT_PROJECT
+FROM python:3.6-stretch
+WORKDIR /flaskproject
+COPY requirements.txt /flaskproject
+RUN pip3 install --upgrade pip
+RUN pip3 install -r requirements.txt
+COPY . /flaskproject
 ENTRYPOINT ["python3"] 
-CMD ["app.py"]
+CMD ["main.py"]
